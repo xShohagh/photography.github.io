@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Staatliches", cursive;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #d8d8d8;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  background: coral;
+  color: #fff;
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Header */
+.header-content {
+  display: flex;
+  height: 100vh;
+}
+
+.landing-img {
+  background: url("./img/daniel-roe-lpjb_UMOyx8-unsplash.jpg") no-repeat center
+    center/cover;
+  width: 50%;
+}
+
+.header-content .intro {
+  width: 50%;
+}
+
+.header-content .intro .intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.header-content .intro .intro-content h1 {
+  font-size: 3rem;
+  letter-spacing: 1.3;
+}
+
+.header-content .intro .intro-content p {
+  padding: 1.5rem 0;
+  color: rgb(116, 113, 113);
+}
+
+/* Work Section */
+#my-work .work-title {
+  width: 100%;
+  background-color: #242323;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  letter-spacing: 2;
+}
+
+#my-work .img-description {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#my-work .img-description h2 {
+  padding-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #242323;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer p {
+  padding-top: 1.5rem;
+}
+
+/* Media Query */
+
+@media (max-width: 1080px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content .intro .intro-content {
+    height: 50vh;
+  }
+  .landing-img,
+  .header-content .intro {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
